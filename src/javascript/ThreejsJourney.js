@@ -128,8 +128,8 @@ export default class ThreejsJourney
 //             'color: #705df2;'
 //         )
         console.log('%cWhat are you doing here?! you sneaky developer...', 'color: #32ffce');
-        console.log('%cDo you want to learn how this portfolio has been made?', 'color: #32ffce');
-        console.log('%cCheckout Three.js Journey 👉 https://threejs-journey.com?c=p2', 'color: #32ffce');
+        console.log('%cDo you want to know my sets?', 'color: #32ffce');
+        console.log('%cCheckout my YouTube playlist 👉 https://youtube.com/playlist?list=PLiIX1vnlWWNEFPed7oDm38alCAH0oyJek', 'color: #32ffce');
         console.log('%c— Magros Zapatero', 'color: #777777');
     }
 

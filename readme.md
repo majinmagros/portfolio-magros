@@ -9,8 +9,8 @@
 ## Features
 
 - Interactive 3D scene with intro, car tour, projects, achievements ("distinctions"), and more.
-- **Projects section**: 46 videos, each with its own generated floor texture (title + short description) and a YouTube thumbnail — click **OPEN** to open the corresponding video.
-  - Assets per video live in `static/models/projects/<video-id>/` (`floorTexture.png` + `slideA.jpg`).
+- **Projects section**: 46 videos, each with a YouTube thumbnail slide — click **OPEN** to open the corresponding video.
+  - Slide image per video lives in `static/models/projects/<video-id>/slideA.jpg` and is lazy-loaded when the car approaches.
   - Video metadata is sourced from the playlist `PLiIX1vnlWWNEFPed7oDm38alCAH0oyJek`.
 - GLSL shaders for boards (see `src/javascript/shaders/`).
 - Side-scrolling "tiles" connecting projects.
@@ -48,7 +48,7 @@ folio-2019/
 │  ├─ images/
 │  └─ favicon/
 ├─ static/
-│  ├─ models/          # 3D assets (GLB), textures, project videos & floor textures
+│  ├─ models/          # 3D assets (GLB), textures, project video thumbnails
 │  └─ favicon/         # site manifest / icons
 ├─ resources/          # raw assets (not served)
 └─ vite.config.js
@@ -56,13 +56,12 @@ folio-2019/
 
 ## Projects data (reusable)
 
-The pipeline that builds the 46-video project data, floor textures and thumbnails is captured in
+The pipeline that builds the 46-video project data and thumbnails is captured in
 `playlist-tools` (see project notes). Dataset available as `projects_data_final.json` with
 `{ id, title, desc, short, url }` per video.
 
 Integration points:
-- `src/javascript/Resources.js` — per-video floor texture: `{ name: 'projectsVidNFloor', source: './models/projects/<id>/floorTexture.png', type: 'texture' }`.
-- `src/javascript/World/Sections/ProjectsSection.js` — `setList()` defines each project (name, imageSources, floorTexture, link).
+- `src/javascript/World/Sections/ProjectsSection.js` — `setList()` defines each project (name, imageSources, link).
 
 ## Key dependencies
 

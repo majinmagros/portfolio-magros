@@ -162,7 +162,7 @@ export default class Project
         this.floor.geometry = this.geometries.floor
 
         // Material
-        this.floor.material =  new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, color: 0x333333 })
+        this.floor.material =  new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, color: 0xf5aa58 })
 
         // Mesh
         this.floor.mesh = new THREE.Mesh(this.floor.geometry, this.floor.material)

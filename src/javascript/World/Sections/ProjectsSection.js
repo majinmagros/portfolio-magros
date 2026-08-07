@@ -16,6 +16,7 @@ export default class ProjectsSection
         this.zones = _options.zones
         this.tiles = _options.tiles
         this.debug = _options.debug
+        this.car = _options.car
         this.x = _options.x
         this.y = _options.y
 
@@ -76,7 +77,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/6TXC5G8ecrY/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid1Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=6TXC5G8ecrY",
@@ -96,7 +96,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/lTjxgOQEK0U/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid2Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=lTjxgOQEK0U",
@@ -116,7 +115,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/GdcuXYKnJzQ/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid3Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=GdcuXYKnJzQ",
@@ -136,7 +134,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/ilRqtcjwmUI/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid4Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=ilRqtcjwmUI",
@@ -156,7 +153,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/BTKcgvYx81o/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid5Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=BTKcgvYx81o",
@@ -176,7 +172,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/0rDahsPYsuw/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid6Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=0rDahsPYsuw",
@@ -196,7 +191,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/b3bEWOfiyX4/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid7Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=b3bEWOfiyX4",
@@ -216,7 +210,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/16yZ6EtZ9cE/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid8Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=16yZ6EtZ9cE",
@@ -236,7 +229,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/X6qUXQNrGck/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid9Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=X6qUXQNrGck",
@@ -256,7 +248,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/16GcWSNAukk/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid10Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=16GcWSNAukk",
@@ -276,7 +267,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/_urGBUhH1yI/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid11Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=_urGBUhH1yI",
@@ -296,7 +286,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/YGNeX2oS7Hw/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid12Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=YGNeX2oS7Hw",
@@ -316,7 +305,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/jkz_8LCdwb8/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid13Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=jkz_8LCdwb8",
@@ -336,7 +324,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/VhZqA0Lpw6A/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid14Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=VhZqA0Lpw6A",
@@ -356,7 +343,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/npSbYthBTo4/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid15Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=npSbYthBTo4",
@@ -376,7 +362,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/3rua9eShUvQ/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid16Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=3rua9eShUvQ",
@@ -396,7 +381,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/5PGFT_V0WqY/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid17Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=5PGFT_V0WqY",
@@ -416,7 +400,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/o4gCBe-Shsc/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid18Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=o4gCBe-Shsc",
@@ -436,7 +419,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/nr0uJ5OT5Us/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid19Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=nr0uJ5OT5Us",
@@ -456,7 +438,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/-nX70DG4iEM/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid20Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=-nX70DG4iEM",
@@ -476,7 +457,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/8BDzg6pM5as/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid21Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=8BDzg6pM5as",
@@ -496,7 +476,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/Ya4g2Wwizt0/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid22Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=Ya4g2Wwizt0",
@@ -516,7 +495,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/rxoQ65YCSeE/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid23Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=rxoQ65YCSeE",
@@ -536,7 +514,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/OvYhhKYvjGI/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid24Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=OvYhhKYvjGI",
@@ -556,7 +533,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/bh9TcthCMXo/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid25Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=bh9TcthCMXo",
@@ -576,7 +552,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/3aYie-u93bQ/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid26Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=3aYie-u93bQ",
@@ -596,7 +571,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/b2iNwqheRcI/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid27Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=b2iNwqheRcI",
@@ -616,7 +590,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/_rF3OvKj_QY/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid28Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=_rF3OvKj_QY",
@@ -636,7 +609,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/12PJPz12Zks/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid29Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=12PJPz12Zks",
@@ -656,7 +628,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/a62ogSVllIk/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid30Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=a62ogSVllIk",
@@ -676,7 +647,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/yE-DC6na78s/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid31Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=yE-DC6na78s",
@@ -696,7 +666,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/72x9hi3zZsc/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid32Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=72x9hi3zZsc",
@@ -716,7 +685,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/onHts4ou9VQ/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid33Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=onHts4ou9VQ",
@@ -736,7 +704,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/6psUhxFXT6s/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid34Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=6psUhxFXT6s",
@@ -756,7 +723,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/nyRFpKrxxwg/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid35Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=nyRFpKrxxwg",
@@ -776,7 +742,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/3xWSSlkd4OA/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid36Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=3xWSSlkd4OA",
@@ -796,7 +761,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/ZU8pCRApdIY/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid37Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=ZU8pCRApdIY",
@@ -816,7 +780,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/fToez0H0b24/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid38Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=fToez0H0b24",
@@ -836,7 +799,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/VijQJQUev5s/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid39Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=VijQJQUev5s",
@@ -856,7 +818,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/Zf7V-rnzUmc/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid40Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=Zf7V-rnzUmc",
@@ -876,7 +837,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/kwezBVvpE4Y/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid41Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=kwezBVvpE4Y",
@@ -896,7 +856,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/_SR8QLn7gVU/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid42Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=_SR8QLn7gVU",
@@ -916,7 +875,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/E4TMRkQniWo/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid43Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=E4TMRkQniWo",
@@ -936,7 +894,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/SO0R5dDTl3Y/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid44Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=SO0R5dDTl3Y",
@@ -956,7 +913,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/4lYllo4L0d8/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid45Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=4lYllo4L0d8",
@@ -976,7 +932,6 @@ export default class ProjectsSection
                 [
                     "./models/projects/5-k3_lFRLHA/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsVid46Floor,
                 link:
                 {
                     href: "https://www.youtube.com/watch?v=5-k3_lFRLHA",
@@ -1036,6 +991,7 @@ export default class ProjectsSection
             geometries: this.geometries,
             meshes: this.meshes,
             debug: this.debugFolder,
+            car: this.car,
             x: x,
             y: y,
             ..._options

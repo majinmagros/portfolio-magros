@@ -1,5 +1,22 @@
 # FOLIO-2019 — Notas de retomada (contexto da sessão)
 
+## IMPORTANTE: Projetos movidos para fora do OneDrive (07/08)
+
+- Os projetos foram movidos de `C:\Users\rosan\OneDrive\Área de Trabalho\` para **`C:\Projetos\`** (folio-2019 e folio-2025) para acabar com a sincronização de `node_modules` no OneDrive, que consumia RAM/CPU enorme e causava travamentos.
+- Dev servers agora rodam a partir de `C:\Projetos\folio-2019` (porta 5174) e `C:\Projetos\folio-2025` (porta 5173).
+
+## Diagnóstico de travamento na seção Projects (07/08 — EM ANDAMENTO)
+
+- **Sintoma**: a cena roda a 60 fps na intro (medido via Chrome headless/CDP), mas **trava ao navegar até a seção Projects** (mesmo com 46→12 projetos, pixelRatio limitado a 1.5, assets reduzidos, OneDrive fora e RAM folgada).
+- **WebGL confirma usar NVIDIA GTX 1650** (ANGLE/D3D11). Não é GPU errada.
+- **Hipótese atual**: texturas/imagens dos projetos (capas `slideA.jpg` + pisos `floorTexture.png`). 
+- **Teste de isolamento APLICADO** (não reverter ainda): em `src/javascript/World/Sections/Project.js` foi desativado o carregamento de imagem do board (`setBoards`) e o `alphaMap` do piso (`setFloor`, agora cor sólida). Objetivo: navegar até Projects sem nenhuma textura e verificar se trava.
+  - Se **não** travar → causa confirmada = texturas/imagens.
+  - Se **ainda** travar → causa é geometria/física/draw calls (aprofundar).
+- **Como reverter o isolamento**: reativar o bloco `const image = new Image()` em `setBoards` e devolver o `alphaMap: this.floor.texture` em `setFloor`.
+- **Nova localização dos arquivos**: `C:\Projetos\folio-2019\...` (os caminhos no topo deste arquivo referem-se a essa base).
+- Chrome foi forçado para a NVIDIA via registro (`HKCU\Software\Microsoft\DirectX\UserGpuPreferences` → `chrome.exe = GpuPreference=2`).
+
 ## Últimas alterações (CONCLUÍDAS e commitadas — commit `a15c2ff`, push em origin/master)
 
 - **Letreiro "MAGROS ZAPATERO" na intro 3D concluído.** `src/javascript/World/Sections/IntroSection.js` → `setTitles()` monta as palavras `MAGROS` e `ZAPATERO` a partir das letras GLB com `offset.x` calculado pela largura real de cada letra (M .907, A .933, T .860, R .731, O .955, S .674, Z .725, P .716, E .664, G .788), gap 0.4, layout centrado em x≈0. **Nota:** verificação visual pendente no 5174 (ver "Onde paramos" abaixo se algo não encaixar).

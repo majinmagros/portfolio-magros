@@ -413,7 +413,8 @@ export default class World
             zones: this.zones,
             walls: this.walls,
             tiles: this.tiles,
-            debug: this.debugFolder
+            debug: this.debugFolder,
+            car: this.car
         }
 
         // // Distinction A

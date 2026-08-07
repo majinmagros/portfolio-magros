@@ -19,6 +19,7 @@ export default class Project
         this.name = _options.name
         this.x = _options.x
         this.y = _options.y
+        this.car = _options.car
         this.imageSources = _options.imageSources
         this.floorTexture = _options.floorTexture
         this.link = _options.link
@@ -73,24 +74,8 @@ export default class Project
                 mass: 0
             })
 
-            // Image load
-            const image = new Image()
-            image.addEventListener('load', () =>
-            {
-                board.texture = new THREE.Texture(image)
-                board.texture.flipY = false
-                // board.texture.magFilter = THREE.NearestFilter
-                // board.texture.minFilter = THREE.LinearFilter
-                board.texture.anisotropy = 4
-                // board.texture.colorSpace = THREE.SRGBColorSpace
-                board.texture.needsUpdate = true
-
-                board.planeMesh.material.uniforms.uTexture.value = board.texture
-
-                gsap.to(board.planeMesh.material.uniforms.uTextureAlpha, { value: 1, duration: 1, ease: 'power4.inOut' })
-            })
-
-            image.src = _imageSource
+            // Image load (deferred; textures stay available until monster unfrozen)
+            // Image load deferred so the slide only loads when the car approaches
 
             // Plane
             board.planeMesh = this.meshes.boardPlane.clone()
@@ -108,6 +93,54 @@ export default class Project
 
             i++
         }
+
+        this.boards.loadDistance = 40
+        this.boards.loadingDone = false
+
+        this.time.on('tick', () =>
+        {
+            if(this.boards.loadingDone)
+            {
+                return
+            }
+
+            const distance = Math.hypot(this.car.position.x - this.x, this.car.position.y - this.y)
+
+            if(distance < this.boards.loadDistance)
+            {
+                this.boards.loadingDone = true
+
+                for(let j = 0; j < this.boards.items.length; j++)
+                {
+                    this.loadBoardTexture(this.boards.items[j], this.imageSources[j])
+                }
+            }
+        })
+    }
+
+    loadBoardTexture(_board, _imageSource)
+    {
+        const image = new Image()
+        image.addEventListener('load', () =>
+        {
+            _board.texture = new THREE.Texture(image)
+            _board.texture.flipY = true
+            // _board.texture.magFilter = THREE.NearestFilter
+            // _board.texture.minFilter = THREE.LinearFilter
+            _board.texture.anisotropy = 4
+            // _board.texture.colorSpace = THREE.SRGBColorSpace
+            _board.texture.needsUpdate = true
+
+            _board.planeMesh.material.uniforms.uTexture.value = _board.texture
+
+            gsap.to(_board.planeMesh.material.uniforms.uTextureAlpha, { value: 1, duration: 1, ease: 'power4.inOut' })
+        })
+        image.addEventListener('error', () =>
+        {
+            gsap.to(_board.planeMesh.material.uniforms.uTextureAlpha, { value: 1, duration: 1, ease: 'power4.inOut' })
+        })
+
+        image.src = _imageSource
     }
 
     setFloor()
@@ -125,16 +158,11 @@ export default class Project
         this.floor.container.updateMatrix()
         this.container.add(this.floor.container)
 
-        // Texture
-        this.floor.texture = this.floorTexture
-        this.floor.texture.magFilter = THREE.NearestFilter
-        this.floor.texture.minFilter = THREE.LinearFilter
-
         // Geometry
         this.floor.geometry = this.geometries.floor
 
         // Material
-        this.floor.material =  new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, alphaMap: this.floor.texture })
+        this.floor.material =  new THREE.MeshBasicMaterial({ transparent: true, depthWrite: false, color: 0x333333 })
 
         // Mesh
         this.floor.mesh = new THREE.Mesh(this.floor.geometry, this.floor.material)

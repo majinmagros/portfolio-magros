@@ -160,22 +160,24 @@ export default class IntroSection
     setTitles()
     {
         // MAGROS ZAPATERO
-        // Letters are placed side by side; x offset is computed from each
-        // letter's real geometry width so the word reads correctly.
-        const gap = 0.4
+        // Each letter GLB has a baked world position (x/2 is the physics
+        // center). The final rendered x is offset.x + (bakedX - centerX),
+        // so each letter needs a compensation to sit side by side.
+        const gap = 0.55
+        const wordGap = 2.4
 
         const letters =
         {
-            M: { name: 'introM', width: 0.907 },
-            A: { name: 'introA', width: 0.933 },
-            T: { name: 'introT', width: 0.860 },
-            R: { name: 'introR', width: 0.731 },
-            O: { name: 'introO', width: 0.955 },
-            S: { name: 'introS', width: 0.674 },
-            Z: { name: 'introZ', width: 0.725 },
-            P: { name: 'introP', width: 0.716 },
-            E: { name: 'introE', width: 0.664 },
-            G: { name: 'introG', width: 0.788 }
+            M: { name: 'introM', width: 2.44, bakedCenter: - 21.73 },
+            A: { name: 'introA', width: 2.51, bakedCenter: - 18.60 },
+            G: { name: 'introG', width: 2.12, bakedCenter: - 15.39 },
+            R: { name: 'introR', width: 1.96, bakedCenter: - 12.58 },
+            O: { name: 'introO', width: 2.57, bakedCenter: - 9.92 },
+            S: { name: 'introS', width: 1.81, bakedCenter: - 6.66 },
+            Z: { name: 'introZ', width: 1.95, bakedCenter: - 0.66 },
+            P: { name: 'introP', width: 1.92, bakedCenter: 5.19 },
+            T: { name: 'introT', width: 2.31, bakedCenter: 11.02 },
+            E: { name: 'introE', width: 1.78, bakedCenter: 14.02 }
         }
 
         const words =
@@ -184,7 +186,8 @@ export default class IntroSection
             'ZAPATERO'
         ]
 
-        let leftEdge = 0
+        // Compute the target x for each letter center (row of words centered on x = 0)
+        let cursor = 0
         const titles = []
 
         for(let wordIndex = 0; wordIndex < words.length; wordIndex++)
@@ -194,26 +197,27 @@ export default class IntroSection
             for(let i = 0; i < word.length; i++)
             {
                 const letter = letters[word[i]]
+                const targetX = cursor + letter.width * 0.5
 
-                titles.push({ name: letter.name, width: letter.width, offset: leftEdge + letter.width / 2 })
-                leftEdge += letter.width + gap
+                titles.push({ name: letter.name, targetX, bakedCenter: letter.bakedCenter })
+                cursor += letter.width + gap
             }
 
-            // Space between words
+            // Extra spacing between words
             if(wordIndex < words.length - 1)
-                leftEdge += gap
+                cursor += wordGap - gap
         }
 
         // Center the whole layout on x = 0
-        const totalWidth = leftEdge - gap
-        const centerOffset = - totalWidth / 2
+        const totalWidth = cursor - gap
+        const centerOffset = - totalWidth * 0.5
 
         for(const _title of titles)
         {
             this.objects.add({
                 base: this.resources.items[_title.name + 'Base'].scene,
                 collision: this.resources.items[_title.name + 'Collision'].scene,
-                offset: new THREE.Vector3(centerOffset + _title.offset, 0, 0),
+                offset: new THREE.Vector3(centerOffset + _title.targetX - _title.bakedCenter, 0, 0),
                 rotation: new THREE.Euler(0, 0, 0),
                 shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
                 mass: 1.5,

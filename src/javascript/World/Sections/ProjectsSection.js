@@ -70,16 +70,16 @@ export default class ProjectsSection
     setList()
     {
         this.list = [
-            {
-                name: 'Ultimate Cosmic Fusion',
+﻿            {
+                name: "\ud83d\udd49\ufe0f Ultimate Cosmic Fusion \u2014 Hindu Gods dropping divine beats over ancient myths - magros Zapatero",
                 imageSources:
                 [
-                    './models/projects/cosmic-fusion/slideA.jpg'
+                    "./models/projects/6TXC5G8ecrY/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
+                floorTexture: this.resources.items.projectsVid1Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=6TXC5G8ecrY',
+                    href: "https://www.youtube.com/watch?v=6TXC5G8ecrY",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -91,15 +91,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Drum and Bass Hits HARD',
+                name: "WARNING: This Drum and Bass Mix Hits HARD \u26a1 Underground DNB - magros Zapatero",
                 imageSources:
                 [
-                    './models/projects/dnb-hard/slideA.jpg'
+                    "./models/projects/lTjxgOQEK0U/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsChartogneFloorTexture,
+                floorTexture: this.resources.items.projectsVid2Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=lTjxgOQEK0U',
+                    href: "https://www.youtube.com/watch?v=lTjxgOQEK0U",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -111,15 +111,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'DnB feat. Bryan Gee',
+                name: "Drum'n Bass - magros Zapatero feat.  Bryan Gee playlist",
                 imageSources:
                 [
-                    './models/projects/dnb-bryangee/slideA.jpg'
+                    "./models/projects/GdcuXYKnJzQ/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsMadboxFloorTexture,
+                floorTexture: this.resources.items.projectsVid3Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=GdcuXYKnJzQ',
+                    href: "https://www.youtube.com/watch?v=GdcuXYKnJzQ",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -131,15 +131,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Hypnotic Dark Techno @GG',
+                name: "Hypnotic Dark Techno   magros @GG",
                 imageSources:
                 [
-                    './models/projects/darktechno-gg/slideA.jpg'
+                    "./models/projects/ilRqtcjwmUI/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsOranoFloorTexture,
+                floorTexture: this.resources.items.projectsVid4Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=ilRqtcjwmUI',
+                    href: "https://www.youtube.com/watch?v=ilRqtcjwmUI",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -151,15 +151,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'DnB Scouter DBZ feat. Upgrade',
+                name: "Drum'n Bass - magros Zapatero - Scouter DBZ - feat. Upgrade playlist mix",
                 imageSources:
                 [
-                    './models/projects/dnb-dbz/slideA.jpg'
+                    "./models/projects/BTKcgvYx81o/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
+                floorTexture: this.resources.items.projectsVid5Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=BTKcgvYx81o',
+                    href: "https://www.youtube.com/watch?v=BTKcgvYx81o",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -171,15 +171,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Hypnotic Dark Techno - Live 2015',
+                name: "Hypnotic Dark Techno - magros spinning live set ib 23 avril 2015",
                 imageSources:
                 [
-                    './models/projects/darktechno-2015/slideA.jpg'
+                    "./models/projects/0rDahsPYsuw/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsScoutFloorTexture,
+                floorTexture: this.resources.items.projectsVid6Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=0rDahsPYsuw',
+                    href: "https://www.youtube.com/watch?v=0rDahsPYsuw",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -191,15 +191,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Björk von Hohenheim - Dark Techno',
+                name: "Bj\u00f6rk von Hohenheim -  Hypnotic Dark Techno @Fiteiro Cultural IB 18 Dez 2014",
                 imageSources:
                 [
-                    './models/projects/fiteiro-2014/slideA.jpg'
+                    "./models/projects/b3bEWOfiyX4/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsChartogneFloorTexture,
+                floorTexture: this.resources.items.projectsVid7Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=b3bEWOfiyX4',
+                    href: "https://www.youtube.com/watch?v=b3bEWOfiyX4",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -211,15 +211,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Björk von Hohenheim - Minimal Tech',
+                name: "Bj\u00f6rk von Hohenheim - Hypnotic Minimal Tech",
                 imageSources:
                 [
-                    './models/projects/minimal-tech/slideA.jpg'
+                    "./models/projects/16yZ6EtZ9cE/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
+                floorTexture: this.resources.items.projectsVid8Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=16yZ6EtZ9cE',
+                    href: "https://www.youtube.com/watch?v=16yZ6EtZ9cE",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -231,15 +231,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Magros Zapatero at Second Life',
+                name: "magros Zapatero at Second Life.",
                 imageSources:
                 [
-                    './models/projects/secondlife/slideA.jpg'
+                    "./models/projects/X6qUXQNrGck/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
+                floorTexture: this.resources.items.projectsVid9Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=X6qUXQNrGck',
+                    href: "https://www.youtube.com/watch?v=X6qUXQNrGck",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -251,15 +251,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'DnB feat. Simula & Bou',
+                name: "Drum'n Bass - magros Zapatero feat. Simula & Bou playlist mix",
                 imageSources:
                 [
-                    './models/projects/dnb-simulabou/slideA.jpg'
+                    "./models/projects/16GcWSNAukk/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsMadboxFloorTexture,
+                floorTexture: this.resources.items.projectsVid10Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=16GcWSNAukk',
+                    href: "https://www.youtube.com/watch?v=16GcWSNAukk",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -271,15 +271,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Björk von Hohenheim - Techno Music',
+                name: "Bj\u00f6rk von Hohenheim - Hypnotic Techno Music",
                 imageSources:
                 [
-                    './models/projects/techno-music/slideA.jpg'
+                    "./models/projects/_urGBUhH1yI/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsOranoFloorTexture,
+                floorTexture: this.resources.items.projectsVid11Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=_urGBUhH1yI',
+                    href: "https://www.youtube.com/watch?v=_urGBUhH1yI",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -291,15 +291,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Connecting to Host - Agros.Net',
+                name: "Hypnotic Techno Music  - magros Connecting to host - Agros.Net",
                 imageSources:
                 [
-                    './models/projects/agros-net/slideA.jpg'
+                    "./models/projects/YGNeX2oS7Hw/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsScoutFloorTexture,
+                floorTexture: this.resources.items.projectsVid12Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=YGNeX2oS7Hw',
+                    href: "https://www.youtube.com/watch?v=YGNeX2oS7Hw",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -311,15 +311,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Björk von Hohenheim - Techno @GG',
+                name: "Bj\u00f6rk von Hohenheim - Techno magros @GG",
                 imageSources:
                 [
-                    './models/projects/techno-gg/slideA.jpg'
+                    "./models/projects/jkz_8LCdwb8/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsChartogneFloorTexture,
+                floorTexture: this.resources.items.projectsVid13Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=jkz_8LCdwb8',
+                    href: "https://www.youtube.com/watch?v=jkz_8LCdwb8",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -331,15 +331,15 @@ export default class ProjectsSection
                 distinctions: []
             },
             {
-                name: 'Hypnotic Techno Experimental',
+                name: "Hypnotic Techno Experimental -  magros Zapatero",
                 imageSources:
                 [
-                    './models/projects/techno-experimental/slideA.jpg'
+                    "./models/projects/VhZqA0Lpw6A/slideA.jpg"
                 ],
-                floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
+                floorTexture: this.resources.items.projectsVid14Floor,
                 link:
                 {
-                    href: 'https://www.youtube.com/watch?v=VhZqA0Lpw6A',
+                    href: "https://www.youtube.com/watch?v=VhZqA0Lpw6A",
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -349,7 +349,647 @@ export default class ProjectsSection
                     }
                 },
                 distinctions: []
-            }
+            },
+            {
+                name: "Bj\u00f6rk von Hohenheim - Hypnotic Dark Techno @Fiteiro Cultural 06 nov 2012",
+                imageSources:
+                [
+                    "./models/projects/npSbYthBTo4/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid15Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=npSbYthBTo4",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "\ud83d\udc7b Bj\u00f6rk von Hohenheim - Hypnotic Dark Techno - Halloween Party at home - Music to Code Oct 31 2025 \ud83c\udf83",
+                imageSources:
+                [
+                    "./models/projects/3rua9eShUvQ/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid16Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=3rua9eShUvQ",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "\ud83d\udc7b Bj\u00f6rk von Hohenheim - Hypnotic Dark Techno - Halloween Party at home - Music to Relax Oct 312025 \ud83c\udf83",
+                imageSources:
+                [
+                    "./models/projects/5PGFT_V0WqY/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid17Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=5PGFT_V0WqY",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Drum'n Bass - magros Zapatero feat. BreaK and Update",
+                imageSources:
+                [
+                    "./models/projects/o4gCBe-Shsc/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid18Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=o4gCBe-Shsc",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Hypnotic Dark Techno @ Taclsen (4)",
+                imageSources:
+                [
+                    "./models/projects/nr0uJ5OT5Us/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid19Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=nr0uJ5OT5Us",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Bj\u00f6rk von Hohenheim - Astronema - Hypnotic Minimal Tech",
+                imageSources:
+                [
+                    "./models/projects/-nX70DG4iEM/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid20Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=-nX70DG4iEM",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Dubstep - magros Zapatero - Peekaboo",
+                imageSources:
+                [
+                    "./models/projects/8BDzg6pM5as/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid21Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=8BDzg6pM5as",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Dubstep - magros Zapatero - Hamdi",
+                imageSources:
+                [
+                    "./models/projects/Ya4g2Wwizt0/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid22Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=Ya4g2Wwizt0",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Dubstep - magros Zapatero - Sinestro Corps",
+                imageSources:
+                [
+                    "./models/projects/rxoQ65YCSeE/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid23Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=rxoQ65YCSeE",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Dark Techno VS Psy Techno - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/OvYhhKYvjGI/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid24Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=OvYhhKYvjGI",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Top 25 Drum & Bass Bangers Of 2025",
+                imageSources:
+                [
+                    "./models/projects/bh9TcthCMXo/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid25Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=bh9TcthCMXo",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Deep Techno & Minimal Mix - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/3aYie-u93bQ/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid26Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=3aYie-u93bQ",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Psy Techno VS Dark Techno - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/b2iNwqheRcI/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid27Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=b2iNwqheRcI",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "\u26a0\ufe0f WARNING: This Underground Minimal & Dark Techno Set Hits HARD - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/_rF3OvKj_QY/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid28Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=_rF3OvKj_QY",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "LITERALLY BREAK YOUR SPEAKERS \ud83d\ude31\ud83d\udd25 #HeaviestBass2026 - magros Zapatero",
+                imageSources:
+                [
+                    "./models/projects/12PJPz12Zks/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid29Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=12PJPz12Zks",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "ARE YOU READY TO GET WRECKED?  Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/a62ogSVllIk/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid30Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=a62ogSVllIk",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Lost in Hypnosis: Deep Techno That Will Trap You for Hours And You'll Love It - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/yE-DC6na78s/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid31Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=yE-DC6na78s",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "WARNING: Underground Techno So Dark It Might Ruin EDM Music for You Forever  - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/72x9hi3zZsc/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid32Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=72x9hi3zZsc",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Commercial EDM Makes You Sick, This Underground Mix Will Break Your Brain  - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/onHts4ou9VQ/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid33Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=onHts4ou9VQ",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "If You Like Mainstream EDM... DON'T CLICK! Real Dark Techno Only \ud83d\ude08 - Anubis -  magros Zapatero",
+                imageSources:
+                [
+                    "./models/projects/6psUhxFXT6s/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid34Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=6psUhxFXT6s",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "YOU'RE NOT READY for this Underground Techno 2026 \ud83d\udc80 - Hathor - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/nyRFpKrxxwg/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid35Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=nyRFpKrxxwg",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "This Hypnotic Minimal Techno Set Will MELT Your Brain in 2026 \ud83d\udd25- Hathor - Bj\u00f6rk von Hohenheim",
+                imageSources:
+                [
+                    "./models/projects/3xWSSlkd4OA/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid36Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=3xWSSlkd4OA",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "DRUM & BASS Mix 2025 \ud83d\udd25 Jump Up, Neurofunk & Underground DnB",
+                imageSources:
+                [
+                    "./models/projects/ZU8pCRApdIY/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid37Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=ZU8pCRApdIY",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "This Drum & Bass Set Will Melt Your Brain (Jump Up / Neurofunk / Techstep) - magros Zapatero",
+                imageSources:
+                [
+                    "./models/projects/fToez0H0b24/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid38Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=fToez0H0b24",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "The FORBIDDEN PLAYLIST of the Gods: Peak Time Techno through Greek Myth - magros Zapatero",
+                imageSources:
+                [
+                    "./models/projects/VijQJQUev5s/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid39Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=VijQJQUev5s",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Hindu Myth - Ramayana - magros Zapatero",
+                imageSources:
+                [
+                    "./models/projects/Zf7V-rnzUmc/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid40Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=Zf7V-rnzUmc",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Description",
+                imageSources:
+                [
+                    "./models/projects/kwezBVvpE4Y/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid41Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=kwezBVvpE4Y",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Greek MythForbidden",
+                imageSources:
+                [
+                    "./models/projects/_SR8QLn7gVU/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid42Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=_SR8QLn7gVU",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Cyber DJ Live Set \u2014 Drum & Bass 180+ BPM Mix | feat. Nick a Lot",
+                imageSources:
+                [
+                    "./models/projects/E4TMRkQniWo/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid43Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=E4TMRkQniWo",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Bj\u00f6rk von Hohenheim - Hypnotic Dark Techno - Part 1",
+                imageSources:
+                [
+                    "./models/projects/SO0R5dDTl3Y/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid44Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=SO0R5dDTl3Y",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "24 de maio de 2026",
+                imageSources:
+                [
+                    "./models/projects/4lYllo4L0d8/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid45Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=4lYllo4L0d8",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
+            {
+                name: "Bj\u00f6rk von Hohenheim - Hypnotic Dark Techno - Part 2",
+                imageSources:
+                [
+                    "./models/projects/5-k3_lFRLHA/slideA.jpg"
+                ],
+                floorTexture: this.resources.items.projectsVid46Floor,
+                link:
+                {
+                    href: "https://www.youtube.com/watch?v=5-k3_lFRLHA",
+                    x: - 4.8,
+                    y: - 3,
+                    halfExtents:
+                    {
+                        x: 3.2,
+                        y: 1.5
+                    }
+                },
+                distinctions: []
+            },
         ]
     }
 

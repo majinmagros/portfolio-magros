@@ -4,6 +4,8 @@
 
 > Remote: `https://github.com/majinmagros/portfolio-magros.git` (branch `master`)
 
+![Folio 2019](./static/social/share-image.png)
+
 ## Features
 
 - Interactive 3D scene with intro, car tour, projects, achievements ("distinctions"), and more.

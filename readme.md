@@ -1,6 +1,6 @@
 # Folio 2019 (Magros Zapatero)
 
-3D portfolio / Time Machine build running on Three.js + Vite. Originally a Bruno Simon folio, personalized with the "Magros Zapatero" project content — including a projects section populated with **46 videos** from the author's YouTube playlist.
+3D portfolio / Time Machine build running on Three.js + Vite, personalized with the "Magros Zapatero" project content — including a projects section populated with **46 videos** from the author's YouTube playlist.
 
 > Remote: `https://github.com/majinmagros/portfolio-magros.git` (branch `master`)
 

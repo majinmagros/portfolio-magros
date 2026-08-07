@@ -160,31 +160,60 @@ export default class IntroSection
     setTitles()
     {
         // MAGROS ZAPATERO
-        // Letter baked at first occurrence; repeats use an x offset.
-        const titles =
+        // Letters are placed side by side; x offset is computed from each
+        // letter's real geometry width so the word reads correctly.
+        const gap = 0.4
+
+        const letters =
+        {
+            M: { name: 'introM', width: 0.907 },
+            A: { name: 'introA', width: 0.933 },
+            T: { name: 'introT', width: 0.860 },
+            R: { name: 'introR', width: 0.731 },
+            O: { name: 'introO', width: 0.955 },
+            S: { name: 'introS', width: 0.674 },
+            Z: { name: 'introZ', width: 0.725 },
+            P: { name: 'introP', width: 0.716 },
+            E: { name: 'introE', width: 0.664 },
+            G: { name: 'introG', width: 0.788 }
+        }
+
+        const words =
         [
-            { base: 'introMBase', collision: 'introMCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introABase', collision: 'introACollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introGBase', collision: 'introGCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introRBase', collision: 'introRCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introOBase', collision: 'introOCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introSBase', collision: 'introSCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introZBase', collision: 'introZCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introABase', collision: 'introACollision', offset: new THREE.Vector3(20.59, 0, 0) },
-            { base: 'introPBase', collision: 'introPCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introABase', collision: 'introACollision', offset: new THREE.Vector3(26.41, 0, 0) },
-            { base: 'introTBase', collision: 'introTCollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introEBase', collision: 'introECollision', offset: new THREE.Vector3(0, 0, 0) },
-            { base: 'introRBase', collision: 'introRCollision', offset: new THREE.Vector3(29.09, 0, 0) },
-            { base: 'introOBase', collision: 'introOCollision', offset: new THREE.Vector3(29.09, 0, 0) }
+            'MAGROS',
+            'ZAPATERO'
         ]
+
+        let leftEdge = 0
+        const titles = []
+
+        for(let wordIndex = 0; wordIndex < words.length; wordIndex++)
+        {
+            const word = words[wordIndex]
+
+            for(let i = 0; i < word.length; i++)
+            {
+                const letter = letters[word[i]]
+
+                titles.push({ name: letter.name, width: letter.width, offset: leftEdge + letter.width / 2 })
+                leftEdge += letter.width + gap
+            }
+
+            // Space between words
+            if(wordIndex < words.length - 1)
+                leftEdge += gap
+        }
+
+        // Center the whole layout on x = 0
+        const totalWidth = leftEdge - gap
+        const centerOffset = - totalWidth / 2
 
         for(const _title of titles)
         {
             this.objects.add({
-                base: this.resources.items[_title.base].scene,
-                collision: this.resources.items[_title.collision].scene,
-                offset: _title.offset,
+                base: this.resources.items[_title.name + 'Base'].scene,
+                collision: this.resources.items[_title.name + 'Collision'].scene,
+                offset: new THREE.Vector3(centerOffset + _title.offset, 0, 0),
                 rotation: new THREE.Euler(0, 0, 0),
                 shadow: { sizeX: 1.5, sizeY: 1.5, offsetZ: - 0.6, alpha: 0.4 },
                 mass: 1.5,

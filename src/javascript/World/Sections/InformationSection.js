@@ -19,14 +19,52 @@ export default class InformationSection
         this.container.matrixAutoUpdate = false
 
         this.setStatic()
-        this.setBaguettes()
+        // this.setBaguettes() // France baguettes removed
         this.setLinks()
         this.setActivities()
         this.setTiles()
     }
 
+    removeFranceElements()
+    {
+        const visualScene = this.resources.items.informationStaticBase.scene
+        const collisionScene = this.resources.items.informationStaticCollision.scene
+
+        // Region of the France diorama in local coordinates
+        // (pin, tower, mast and flag bands all sit in x[-7,-3] / y[4,7.5])
+        const isInFranceRegion = (_position) =>
+        {
+            const x = _position.x
+            const y = _position.y
+            return x >= - 7 && x <= - 3 && y >= 4 && y <= 7.5
+        }
+
+        // Remove any object whose world position falls in the France region
+        const filterScene = (_scene) =>
+        {
+            _scene.updateMatrixWorld(true)
+
+            for(const _child of [..._scene.children])
+            {
+                _child.updateMatrixWorld(true)
+                const worldPosition = new THREE.Vector3()
+                _child.getWorldPosition(worldPosition)
+
+                if(isInFranceRegion(worldPosition))
+                {
+                    _scene.remove(_child)
+                }
+            }
+        }
+
+        filterScene(visualScene)
+        filterScene(collisionScene)
+    }
+
     setStatic()
     {
+        this.removeFranceElements()
+
         this.objects.add({
             base: this.resources.items.informationStaticBase.scene,
             collision: this.resources.items.informationStaticCollision.scene,

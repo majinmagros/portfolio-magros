@@ -1,5 +1,24 @@
 # FOLIO-2019 — Notas de retomada (contexto da sessão)
 
+## Últimas alterações (CONCLUÍDAS e commitadas — commit `a15c2ff`, push em origin/master)
+
+- **Letreiro "MAGROS ZAPATERO" na intro 3D concluído.** `src/javascript/World/Sections/IntroSection.js` → `setTitles()` monta as palavras `MAGROS` e `ZAPATERO` a partir das letras GLB com `offset.x` calculado pela largura real de cada letra (M .907, A .933, T .860, R .731, O .955, S .674, Z .725, P .716, E .664, G .788), gap 0.4, layout centrado em x≈0. **Nota:** verificação visual pendente no 5174 (ver "Onde paramos" abaixo se algo não encaixar).
+- **Favicons substituídos pela logo do GitHub** (`https://github.com/majinmagros.png`) em `static/favicon/` e `src/favicon/` (PNG 16/32/180/192/256/270 + ICO 16/32/48 + safari-pinned-tab.svg). **IMPORTANTE:** existem DUAS pastas espelho — `static/favicon/` e `src/favicon/` — e o Vite (`root: 'src/'`) serve a de `src/`. Ao alterar favicons, SEMPRE sincronizar as duas.
+- **Título da aba do navegador corrigido.** `src/javascript/Application.js` → `setTitle()` agora rola o texto "Magros Zapatero" no `document.title` (antes eram sublinhados + emoji, que parecia "BS").
+- **Limpeza do branding:** removidas menções a "Bruno" de `readme.md`, `license.md`, `package.json`, `package-lock.json`, `site.webmanifest` (2019) e `static/favicons/site.webmanifest` (2025). Nome do pacote → `magros-folio-2019`.
+
+## Folio-2025 (CONCLUÍDO — commit `9ba0823`, push em origin/main)
+
+- `sources/Game/World/Areas/TimeMachineArea.js:27`: o botão "Time Machine" agora abre `http://localhost:5174` (dev server do folio-2019) em vez do repositório GitHub.
+- `static/favicons/site.webmanifest`: rebranding (name/short_name "Bruno's" → "Magros Zapatero's").
+
+## Limpeza da máquina (18/05 — fora dos repositórios)
+
+- RAM crítica (0.36 GB livres / 7.8 GB). Encerrados: Docker Desktop, Steam, Avast SecureLine, processos `msedgewebview2` (27→8).
+- Desativados do boot (HKCU Run): Docker Desktop, Steam, autolaunch Chrome, autolaunch Edge. Mantidos: OneDrive, Microsoft.Lists, Windows USB Display.
+- Serviço Avast SecureLine configurado para `start= demand` (via comando admin).
+- Disco: OK (81 GB livres).
+
 ## Projetos (CONCLUÍDO) — seção de projetos substituída pelos vídeos da playlist
 
 - A seção de projetos do folio-2019 (server 5174) foi populada com **todos os 46 vídeos** da playlist do usuário (lista `PLiIX1vnlWWNEFPed7oDm38alCAH0oyJek`).
